@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Suraj Prajapati | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+<style>
+:root{
+  --bg:#0f172a;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#06b6d4;
+  --accent-2:#7c3aed;
+  --text:#e6f0ff;
+  --border:rgba(255,255,255,0.08);
+}
+
+:root[data-theme="light"]{
+  --bg:#f8fafc;
+  --card:#ffffff;
+  --muted:#475569;
+  --accent:#0ea5a4;
+  --accent-2:#7c3aed;
+  --text:#0f172a;
+  --border:rgba(2,6,23,0.08);
+}
+
+body{
+  margin:0;
+  font-family:Inter,sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  transition:0.3s;
+}
+
+.container{max-width:1100px;margin:auto;padding:20px}
+
+header{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:12px 20px;
+  background:var(--card);
+  border-radius:12px;
+}
+
+.brand{display:flex;gap:10px;align-items:center}
+.logo{
+  width:50px;height:50px;border-radius:12px;
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:grid;place-items:center;font-weight:bold;color:white;
+}
+
+nav a{color:var(--muted);margin-left:15px;text-decoration:none}
+nav a:hover{color:var(--text)}
+
+.theme-toggle{
+  border:none;background:var(--accent);color:white;
+  padding:6px 10px;border-radius:6px;cursor:pointer;
+}
+
+section{margin-top:20px}
+
+.card{
+  background:var(--card);
+  padding:20px;
+  border-radius:12px;
+  margin-top:15px;
+  border:1px solid var(--border);
+}
+
+.hero{
+  display:grid;
+  grid-template-columns:1fr 300px;
+  gap:20px;
+}
+
+.avatar img{
+  width:140px;height:140px;border-radius:50%;
+  display:block;margin:auto;
+}
+
+.btn{
+  background:var(--accent);
+  color:white;
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:14px;
+  display:inline-block;
+  margin-right:8px;
+}
+
+.btn.secondary{
+  background:transparent;
+  border:1px solid var(--border);
+  color:var(--text);
+}
+
+.skills-list span{
+  background:var(--bg);
+  padding:6px 12px;
+  border-radius:20px;
+  margin:4px;
+  display:inline-block;
+  font-size:13px;
+  border:1px solid var(--border);
+}
+
+.projects-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:15px;margin-top:10px;
+}
+
+.project-card{
+  background:var(--card);
+  padding:15px;
+  border-radius:10px;
+  border:1px solid var(--border);
+}
+
+.social-icons{
+  text-align:center;
+  margin-top:10px;
+}
+
+.social-icons a{
+  color:var(--accent);
+  font-size:20px;
+  margin:0 8px;
+  text-decoration:none;
+  transition:0.2s;
+}
+
+.social-icons a:hover{
+  color:var(--text);
+  transform:scale(1.2);
+}
+
+footer{
+  text-align:center;
+  margin-top:30px;
+  color:var(--muted);
+}
+
+@media(max-width:850px){
+  .hero{grid-template-columns:1fr}
+  nav{display:none}
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+
+<header>
+  <div class="brand">
+    <div class="logo">SP</div>
+    <div>
+      <h3 style="margin:0">SURAJ PRAJAPATI</h3>
+      <small>BCA Student | AI & Full Stack Enthusiast</small>
+    </div>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <button id="themeToggle" class="theme-toggle">Toggle</button>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="card">
+    <h2>Hello, I’m Suraj Prajapati 👋</h2>
+    <p style="color:var(--muted)">
+      BCA student | Aspiring AI based Full Stack Web Development | Skilled in HTML, CSS, JavaScript, Git, GitHub & Learning DSA in java   </p>
+    <a href="#projects" class="btn">See Projects</a>
+    <a href="#contact" class="btn secondary">Contact</a>
+  </div>
+
+  <div class="card avatar">
+    <img src="https://media.licdn.com/dms/image/v2/D5603AQGWWOIZ2j8s0A/profile-displayphoto-crop_800_800/B56Zurj9FnHMAI-/0/1768109890760?e=1770249600&v=beta&t=sxu7K-TFzSRPbSanr1x3FQkLXejM3kwWCTqsnulA7H4">
+    <p style="text-align:center;color:var(--muted)">📍 Uttar Pradesh, India</p>
+
+    <!-- Profile Social Icons -->
+    <div class="social-icons">
+      <a href="https://linkedin.com/in/surajprajapati9596" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/surajprajapati9596" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://leetcode.com/surajprajapati9596" target="_blank"><i class="fas fa-code"></i></a>
+      <a href="https://t.me/surajprajapati9596" target="_blank"><i class="fab fa-telegram"></i></a>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="card">
+  <h2>About Me</h2>
+  <p style="color:var(--muted)">
+    I am Suraj Prajapati, a BCA student with strong interest in AI and Full Stack Development.  
+    I love solving logical problems, practicing Data Structures & Algorithms in Java,  
+    and building real-world web projects.
+  </p>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="card">
+  <h2>Skills</h2>
+  <div class="skills-list">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Java (DSA)</span>
+    <span>Git & GitHub</span>
+    <span>Responsive Design</span>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+    <div class="project-card">
+      <div class="project-card">
+      <h3>Resume Builder</h3>
+      <p style="color:var(--muted)">Here you can creat and download your resume.
+    </p>
+         <a href="https://surajprajapati9596.github.io/ResumeCraft/">Click Me</a>
+    </div>
+      <h3>Portfolio Website</h3>
+      <p style="color:var(--muted)">Personal responsive portfolio website.</p>
+    </div>
+    <div class="project-card">
+      <h3>College Website</h3>
+      <p style="color:var(--muted)">Responsive college information website.</p>
+             <a href="https://surajprajapati9596.github.io/Firstweb/">Click Me</a>
+    </div>
+  </div>
+</section>
+
+<!-- RESUME -->
+<section id="resume" class="card">
+  <h2>Resume</h2>
+  <a href="resume.pdf" class="btn" download>Download Resume</a>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="card">
+  <h2>Contact</h2>
+  <p style="color:var(--muted)">Email: <b style="color:var(--accent)">surajprajapatijob@gmail.com</b></p>
+  <p style="color:var(--muted)">WhatsApp: <b style="color:var(--accent)">+91 87xxxxxx13</b></p>
+
+  <!-- Contact Social Icons -->
+  <div class="social-icons">
+    <a href="https://linkedin.com/in/surajprajapati9596" target="_blank"><i class="fab fa-linkedin"></i></a>
+    <a href="https://github.com/surajprajapati9596" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://leetcode.com/surajprajapati9596" target="_blank"><i class="fas fa-code"></i></a>
+    <a href="https://t.me/surajprajapati9596" target="_blank"><i class="fab fa-telegram"></i></a>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Suraj Prajapati | Portfolio
+</footer>
+
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+
+// Theme Toggle with proper color change
+const toggle = document.getElementById("themeToggle");
+const root = document.documentElement;
+
+toggle.addEventListener("click",()=>{
+  const current = root.getAttribute("data-theme");
+  const next = current === "light" ? "dark" : "light";
+  root.setAttribute("data-theme", next);
+});
+</script>
+
+</body>
+</html>
